@@ -34,7 +34,7 @@
 }
 
 .register-button {
-  background-color: rgb(113, 187, 248);
+  background-color: #71bbf8;
   border-radius: 4px;
   padding: 20px 10px;
   margin-left: 20px;
@@ -54,6 +54,7 @@
   margin: auto;
   background: white;
   padding: 1rem 2rem;
+  border-radius: 4px;
 }
 
 .background-button {
@@ -67,31 +68,46 @@ h1:hover {
   transition: 0.3s;
 }
 
-h1:focus {
-  background: #cfa;
+h1.pseudo-element {
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
-h1:active {
-  background: #ffa;
+.pseudo-element::after {
+content: "";
+background: #e2f5fd;
+display: block;
+width: 60px;
+height: 4px;
 }
 
-h1:visited {
-  background: #fda;
-  color: #731;
+li.produtos {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.pattern {
-  height: 300px;
-  background-color: rgb(62, 111, 154);
-  background-image: url("./img/pattern.svg");
-  background-repeat: repeat;
+ul.lista-produtos {
+list-style: none;
+margin-left: 60px;
+padding: 0px;
 }
 
+li.produtos::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(#71bbf8,#e2f5fd);
+  border: 2px solid #71bbf8;
+  margin-right: 10px;
+  border-radius: 50%;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   margin: 0px;
-  background-color: #3e6f9a;
+  background-color: #30699b;
   height: 100vh;
 }
