@@ -31,7 +31,6 @@
   color: #000a60;
   padding: 20px;
   text-decoration: none;
-  transition: background 0.4s;
 }
 
 .register-button {
@@ -57,6 +56,30 @@
   padding: 1rem 2rem;
 }
 
+.background-button {
+  text-decoration: none;
+  color: #000a60;
+}
+
+h1:hover {
+  background: #adf;
+  color: #00063a;
+  transition: 0.3s;
+}
+
+h1:focus {
+  background: #cfa;
+}
+
+h1:active {
+  background: #ffa;
+}
+
+h1:visited {
+  background: #fda;
+  color: #731;
+}
+
 .pattern {
   height: 300px;
   background-color: rgb(62, 111, 154);
@@ -64,15 +87,6 @@
   background-repeat: repeat;
 }
 
-.linear {
-  height: 200px;
-  background-image: linear-gradient(#e2f5fd,#3e6f9a);
-}
-
-.radial {
-  height: 200px;
-  background-image: radial-gradient(circle, blue, red);
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
